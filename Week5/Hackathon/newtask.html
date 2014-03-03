@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Set this to the main language of your site -->
+<head>
+    <meta charset="utf-8">
+
+    <title>Hackathon Week 04</title>
+
+    <!-- Enter a brief description of your page -->
+    <meta name="description" content="Homework Challenge 02">
+
+    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/Hackathon04.js"></script>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- Include the site stylesheet -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+   <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="hide" href="#">Task Rabbit</a>
+    </div>
+ 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="landing.html">Home</a></li>
+        <li class="active"><a href="newtask.html" id="tooltip" data-toggle="tooltip" data-placement="bottom" title="Click to make task.">Create Task</a></li>
+        <li><a href="search_job.html" id="tooltip" data-toggle="tooltip" data-placement="bottom" title="Click to do task.">Do Task</a></li>
+        <li><a href="#" >Help</a></li>
+        <li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Tasks</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Create a Task</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    
+    
+    <div class="col-md-2"></div>
+    
+    <div class="col-md-8 panel panel-default posting" style="margin-top:50px">
+        
+        <div class="col-md-12" style="margin-bottom:50px">
+            <h2 style="text-align:center">Post a New Task!</h2>
+        </div>
+        
+        <div class="col-md-6">
+            <form class="form-horizontal">
+                
+                <div class="form-group">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail3" class="col-sm-4 control-label">New Task Title</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Title">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail3" class="control-label col-sm-4">Category</label>
+                        <div class="col-sm-8">
+                            <select class="form-control col-sm-8">
+                                <option>Choose...</option>
+                                <option>Household</option>
+                                <option>Errands</option>
+                                <option>Cleaning</option>
+                                <option>Babysitting</option>
+                                <option>Household</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail3" class="col-sm-4 control-label">Reward for Job: </label>
+                        <div class="col-sm-8">
+                            <input type="address" class="form-control" id="inputEmail3" placeholder="$">
+                                </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail3" class="col-sm-4 control-label">Length of Job: </label>
+                        <div class="col-sm-4">
+                            <input type="address" class="form-control" id="inputEmail3" placeholder="Time">
+                                </div>
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option>Choose...</option>
+                                <option>Hours</option>
+                                <option>Days</option>
+                                <option>Months</option>
+                                <option>Continuous</option>
+                                <option>Repeating</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="col-md-6">
+            <label for="details" class="control-label">Job Description</label>
+            <textarea class="form-control" rows="9" placeholder="Describe your Job!"></textarea>
+        </div>
+        
+        <div class="col-md-12">
+            <div class="col-md-4"></div>
+            <button type="button" class="btn btn-default col-md-4" style="margin-bottom:50px">Submit New Job Posting!</button>
+        </div>
+    </div>
+    
+
+</body>
+</html>
+
+
+
+
+
+

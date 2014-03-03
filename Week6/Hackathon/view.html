@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Pokemon Breeding </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Enter a brief description of your page -->
+    <meta name="description" content="Homework Challenge 02">
+
+    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src=""></script>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- Include the site stylesheet -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!------------ NAV BAR -------------->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header navtitle">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="hide" href="#" style="color:#FFFC19">PokeMatch.com</a>
+    </div>
+ 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="landing.html" style="color:#FFFC19">Home</a></li>
+        <li><a href="newtask.html" id="tooltip" data-toggle="tooltip" data-placement="bottom" title="Click to make task." style="color:#FFFC19">Search for Pets</a></li>
+        <li><a href="#" style="color:#FFFC19">Help</a></li>
+        <li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Pets</a></li>
+            <li><a href="#">Search History</a></li>
+            <li><a href="#">Breed History</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--------------------- END NAV ---------------------->
+<div class="col-md-1"></div>
+<div class="col-md-10 panel panel-default view">
+	{% if pokemon %}
+    <div class="panel-heading" align="center"> {{ pokemon.name }} </div>
+    <div class="panel-body"> 
+    	<div class="col-md-1"></div>
+        <div class="col-md-5">
+            <a href="#" class="thumbnail">
+              <img data-src="holder.js/100%x180" alt="..." height="500px">
+            </a>
+        </div>
+        <div class="col-md-5">
+        	<ul>
+                <li> Gender: {{ pokemon.gender }}</li>
+                <li> Type: {{ pokemon.pokemonType }}</li>
+                <li> Level: {{ pokemon.level }} </li>
+            </ul>
+        </div>
+        {% endif %}
+        <div class="col-md-10" align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+<div class="col-md-1"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color:#7F0030;
+	color:#fff;
+	font-size:18px;
+}
+
+a {
+	color:#7F2648;
+	text-decoration:underline;
+}
+
+.panel-heading {
+	background-color:#FF4C90;
+}
+
+.links {
+	color:#7F2648;
+}
+
+.welcome {
+		font-size:36px;
+}

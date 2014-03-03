@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	background-color:#B21212;
+}
+
+.view {
+	background-color:#0971B2;
+}
+
+.refine-search {
+	background-color:#FFFC19;
+}
+
+.results {
+	background-color:#FF0000;
+}
+
+.panel-heading {
+	background-color:#1485CC;
+}
+
+.navbar {
+	background-color:#0971B2;
+}
+
+.navtitle{
+	color:#FFFC19;
+}

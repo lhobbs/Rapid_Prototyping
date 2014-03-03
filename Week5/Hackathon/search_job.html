@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Task Rabbit</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <!-- JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/Hackathon04.js"></script>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- Include the site stylesheet -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="hide" href="#">Task Rabbit</a>
+    </div>
+ 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="landing.html">Home</a></li>
+        <li><a href="newtask.html" id="tooltip" data-toggle="tooltip" data-placement="bottom" title="Click to make task.">Create Task</a></li>
+        <li class="active"><a href="search_job.html" id="tooltip" data-toggle="tooltip" data-placement="bottom" title="Click to do task.">Do Task</a></li>
+        <li><a href="#" >Help</a></li>
+        <li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Tasks</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Create a Task</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default jobs1">
+            <div class="panel-heading">
+                <div class="row">
+                   <div class="col-md-9">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Do my Luandry
+                    </a>
+                </h4>
+                       </div>
+               <div class="col-md-2" > <button class="btn-primary"><a href="job_description.html">Details</a></button> </div>
+                    </div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    Reward: $25<br />
+                    Job type type: Errand <br />
+                    Location: North Boulder<br />
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default jobs2">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapsetwo">
+                                Wash my car
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="col-md-2"> <button class="btn-primary">Details</button> </div>
+                </div>
+            </div>
+            <div id="collapsetwo" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    Reward: $10<br />
+                    Job type type: Errand <br />
+                    Location: The Hill<br />
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default jobs1">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapsethree">
+                               Chop my fire wood
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="col-md-2"> <button class="btn-primary">Details</button> </div>
+                </div>
+            </div>
+            <div id="collapsethree" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    Reward: $35<br />
+                    Job type type: Manual labor <br />
+                    Location: Nederland<br />
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default jobs2">
+            <div class="panel-heading ">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                Write my Psyche Paper
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="col-md-2"> <button class="btn-primary">Details</button> </div>
+                </div>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    Reward: $100<br />
+                    Job type type: Homework <br />
+                    Location: Your house!<br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-link">Previus</button>
+       
+        <button type="button" class="btn btn-link">Next</button>
+    </div>
+
+    
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $().ready(function () {
+			$('.collapse').collapse();
+            $(document.documentElement).keyup(function (event) {
+                // handle cursor keys
+                if (event.which == 37) {
+                    var active = $('li.active');
+                    active.parent().find('li').removeClass();
+                    active.prev().addClass('active');
+                    //left
+
+                } else if (event.keyCode == 39) {
+                    // go right
+                    var active = $('li.active');
+                    active.parent().find('li').removeClass();
+                    active.next().addClass('active');
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

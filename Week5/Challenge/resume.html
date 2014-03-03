@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Set this to the main language of your site -->
+<head>
+    <meta charset="utf-8">
+
+    <title>Challenge 02.04</title>
+
+    <!-- Enter a brief description of your page -->
+    <meta name="description" content="Homework Challenge 02">
+
+    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="resume.js"></script>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- Include the site stylesheet -->
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!---------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------->
+</head>
+<body>
+
+
+<!----------- Modal --------------->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+        <h4 class="modal-title">Contact Info</h4>
+      </div>
+      <div class="modal-body">
+        <p>Email: elisa.hobbs@colorado.edu</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!----------------------------------------------------------------------------------------->
+
+	<div class="col-md-12" style="height:100px"></div>
+	<div class="col-md-12">
+	
+	<div class="col-md-2"></div>
+	<div class="col-md-2 lpanel">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+ <!---------------- Dropdown -------------------->
+            <div class="dropdown">
+              <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+                Leadership<span class="caret"></span>
+              </a>            
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li> Item 1 </li>
+                <li> Item 2 </li>
+                <li> Item 3 </li>
+              </ul>
+            </div>
+            </div>
+ <!-------------------------------------------------------------->
+			<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac arcu laoreet lectus facilisis dapibus. Nam tempor quam et fermentum egestas.</div>
+		</div>
+	</div>
+	
+	<div class="col-md-1"></div>
+	<div class="col-md-2 lpanel" style="margin-top:-40px">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h4>Projects</h4></div>
+			<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac arcu laoreet lectus facilisis dapibus. Nam tempor quam et fermentum egestas.</div>
+		</div>
+	</div>
+	
+	<div class="col-md-1"></div>
+	<div class="col-md-2 lpanel">
+		<div class="panel panel-default">
+			<div class="panel-heading" id="myModal" align="center"><a id="myModal"> Contact Me </a></div>
+            <!-- <button type="button" data-toggle="modal" data-target="#myModal">Contact Me</button></div> -->
+			<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac arcu laoreet lectus facilisis dapibus. Nam tempor quam et fermentum egestas.</div>
+		</div>
+	</div>
+	<div class="col-md-2"></div>
+	
+</div>
+	
+<div class="col-md-12">
+	<div class="col-md-1"></div>
+	<div class="col-md-2 lpanel">
+		<div class="panel panel-default">
+			<div class="panel-heading" align="center">
+            	<h4><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on left">Resume</button></h4></div>
+			<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac arcu laoreet lectus facilisis dapibus. Nam tempor quam et fermentum egestas.</div>
+		</div>
+	</div>
+	
+	<div class="col-md-1"></div>
+	
+<!-------------- Popover ------------------>   
+		<div class="col-md-4" style="text-align:center" id="popover">
+		<h1 class="col-md-12 ltitle"> </h1>
+<a href="#" id="example" class="btn btn-danger" rel="popover" data-content="This is a page about me!" data-original-title="Twitter Bootstrap Popover">Lisa Hobbs</a>  
+<script>
+$(function ()  
+{ $("#example").popover();  
+});
+</script>
+		<p class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac arcu laoreet lectus facilisis dapibus. Nam tempor quam et fermentum egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean non leo vitae orci imperdiet sollicitudin eget id mauris. Integer consequat faucibus ante non dictum. Nullam imperdiet odio non bibendum pellentesque. Nunc imperdiet bibendum dignissim. Vestibulum nec elementum enim, a egestas neque. Etiam egestas tempor elit ac tristique. Donec non justo in eros hendrerit tincidunt ac ac est. Sed egestas adipiscing purus, sit amet elementum eros tempor ut.</p>
+	</div>
+	
+
+	
+	
+	<div class="col-md-2"></div>
+     <div class="col-md-3" style="text-align:center">
+ <!-------------- Collapse ----------------->  
+     <div class="panel-group col-md-12" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              About Me
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+ <!----------------------------------------->           
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+	
+<!------------------------------------------------------------------>
+<div class="col-md-12" id="carousel" align="center">
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="CU+Boulder.gif" alt="" height="382">
+      <div class="carousel-caption">
+        University of Colorado
+      </div>
+    </div>
+    <div class="item">
+      <img src="swe.jpg" alt="" height="382">
+      <div class="carousel-caption">
+        CU's Outreach Chair
+      </div>
+    </div>
+    <div class="item">
+      <img src="cdos.jpg" alt="" height="382">
+      <div class="carousel-caption">
+        Intern for CDOS
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

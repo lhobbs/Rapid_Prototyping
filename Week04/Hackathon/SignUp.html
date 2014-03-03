@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Set this to the main language of your site -->
+<head>
+    <meta charset="utf-8">
+
+    <title>Hackathon Week 04</title>
+
+    <!-- Enter a brief description of your page -->
+    <meta name="description" content="Homework Challenge 02">
+
+    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/Hackathon04.js"></script>
+	
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- Include the site stylesheet -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div id="Header" class="col-md-12">
+		<div class="col-md-2"></div>
+		<div class="col-md-8 heading panel panel-default">
+			<p>Love Circuit</p>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	
+	<div id="Body" class="col-md-12">
+		<div class="col-md-2"></div>
+        
+		<div class="col-md-8 bodyContent panel panel-default">
+        
+		<div class="col-md-6" style="margin-top:20px">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputName" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputName" placeholder="First and Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputAge" class="col-sm-2 control-label">Age</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="inputAge" placeholder="Age">
+                </div>
+            </div>
+            
+            <div class="form-group">
+            <label for="inputLocation" class="col-sm-2 control-label">Brand</label>
+            <div class="col-sm-10">
+            <select class="form-control">
+            	<option value="select">Select one </option>
+                <option value="one">Apple</option>
+                <option value="two">Asus</option>
+                <option value="three">Dell</option>
+                <option value="four">Hoover</option>
+                <option value="five">hp</option>
+            </select>
+            </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputLocation" class="col-sm-2 control-label" >Location</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputLocation" placeholder="Location">
+                </div>
+            </div>
+    
+            
+        </form>
+			
+            </div>
+            
+            <div class="col-md-6" style="margin-top:20px">
+            <div class="form-group" align="center">
+                <label for="inputLocation" class="control-label">Tell us about yourself!</label>
+                    <textarea class="form-control" rows="10"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-md-12" align="center">
+                    <button type="submit" class="btn btn-default">Sign Up</button>
+                </div>
+            </div>
+            </div>
+			
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	
+	<div id="Footer">
+		
+	</div>
+	
+</body>
+</html>

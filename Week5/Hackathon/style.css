@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#86B1FF
+}
+
+#nav{
+}
+
+.description{
+ 	background-color:#BBD4FF;
+	padding:10px;
+}
+
+a {
+	color:#fff;
+}
+
+.button1, .posting, .jobs1{
+	background-color:#B372FF;
+}
+
+.button2, .jobs2{
+	background-color:#79FFEA;
+}

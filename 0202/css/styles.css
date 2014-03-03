@@ -1,0 +1,137 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for 
+   you to simply add your own. This is a basic template 
+   after all.
+   ---------------------------------------------------------*/
+html{
+	
+	background: url("background.jpg") center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+body {
+	color:#fff;
+	
+	
+}
+
+.page {
+	margin-bottom:50px;
+	margin-top:20px;
+	padding-top:75px;
+	/* background-color:#21293c; */
+	background-color:rgba(0,0,0,.5);
+}
+
+.page2 {
+	margin-bottom:50px;
+	margin-top:20px;
+	padding-top:20px;
+	/*  background-color:#21293c; */
+	background-color:rgba(0,0,0,.5);
+}
+
+img {
+    -webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;
+    }
+
+.lisa .panel-body .panel-heading{
+	background-color:#21293c;
+}
+/* Default link styling */
+a:link
+{
+	color:#bcc1c5;
+}
+a:visited
+{
+	color:#21293c;
+}
+
+a:hover, a:focus {
+    color: #000;
+}
+
+a:active {
+    color: #fb0e02;
+}
+
+.panel-heading {
+	background-color:#586383;
+}
+
+.panel-body {
+	background-color:#586383;
+	color:#fff;
+}
+
+
+
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+body {
+	
+}
+
+
+#c1r1 {
+    height:200px;
+    background-color:#4cff00;
+}
+
+
+/* ---------------------------------------------------------
+   Print styles
+   ---------------------------------------------------------*/
+@media print {
+    * {
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        background: transparent !important;
+    }
+
+    html {
+        background-color:#F30;
+    }
+    /* Hide navigation */
+    nav {
+        display: none;
+    }
+
+    /* Show link destinations in brackets after the link text */
+    a[href]:after {
+        content: " (" attr(href) ") ";
+    }
+
+    a[href] {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #06c;
+        border: none;
+    }
+    /* Don't show link destinations for JavaScript or internal links */
+    a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+
+    /* Show abbr title value in brackets after the text */
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    figure {
+        margin-bottom: 1em;
+        overflow: hidden;
+    }
+
+        figure img {
+            border: 1px solid #000;
+        }
+}

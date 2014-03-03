@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color:#266B7F;
+}
+
+.panel-heading{
+	background-color:#009ECC;
+}
+
+.panel-default {
+	background-color:#009ECC;
+}
+
+.navbar {
+	background-color:#009ECC;
+	color:#000;
+}
+
+li  {
+	color:#000;
+}
+
