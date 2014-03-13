@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title> Pokemon Breeding </title>
+	<title> Search for Boulder Flood Help </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Enter a brief description of your page -->
     <meta name="description" content="Homework Challenge 02">
@@ -39,24 +39,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand navtitle" id="hide" href="#" style="color:#FFFC19">PokeMatch.com</a>
+      <a class="navbar-brand navtitle" id="hide" href="#" style="color:#FFFC19">Boulder Flood Help</a>
     </div>
  
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li ><a href="landing.html" style="color:#FFFC19">Home</a></li>
-        <li class="active"><a href="newtask.html" id="tooltip" data-toggle="tooltip" data-placement="bottom" title="Click to make task.">Search for Pets</a></li>
-        <li><a href="#" style="color:#FFFC19">Help</a></li>
+        <li class="active"><a href="newtask.html" id="tooltip" data-toggle="tooltip" data-placement="bottom" title="Click to make task.">Search for Help</a></li>
+        <li><a href="#" style="color:#FFFC19">Become a Helper</a></li>
         <li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">My Pets</a></li>
+            <li><a href="#">My Account</a></li>
             <li><a href="#">Search History</a></li>
-            <li><a href="#">Breed History</a></li>
+            <li><a href="#">Job History</a></li>
             <li class="divider"></li>
             <li><a href="#">Sign out</a></li>
           </ul>
@@ -87,37 +87,25 @@
   		Refine Search
     </div>
     <div class="col-md-12 panel-body">
-    	<p> Gender </p>
-        <label><input type="checkbox" id="chk1" name="chk1"> Male </label> <br/>
+    	<p> Skills </p>
+        <label><input type="checkbox" id="chk1" name="chk1"> Item 1 </label> <br/>
 
-        <label><input type="checkbox" id="chk2" name="chk2"> Female </label> <br/> <br/>
-        <p> Type </p>
-        <label><input type="checkbox" id="chk1" name="chk1"> Normal </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Electric </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Fighting </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Ground </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Psychic </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Rock </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Fire </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Grass </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Ice </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Poison </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Flying </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Bug </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> Ghost </label> <br/>
-        <label><input type="checkbox" id="chk2" name="chk2"> Water </label> <br/> <br/>
-        <p> Level </p>
-        <label><input type="checkbox" id="chk1" name="chk1"> Below 10 </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> 10 - 20 </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> 20 - 30 </label> <br/>
-        <label><input type="checkbox" id="chk1" name="chk1"> 30 - 40 </label> <br/>
-        <label><input type="checkbox" id="chk2" name="chk2"> Above 50 </label> <br/>
+        <label><input type="checkbox" id="chk2" name="chk2"> Item 2 </label> <br/> <br/>
+        <p> Availablitiy </p>
+        <label><input type="checkbox" id="chk1" name="chk1"> Item 1 </label> <br/>
+        <label><input type="checkbox" id="chk1" name="chk1"> Item 2 </label> <br/>
+        <label><input type="checkbox" id="chk1" name="chk1"> Item 3 </label> <br/> <br/>
+        <p> Location </p>
+        <label><input type="checkbox" id="chk1" name="chk1"> < 10 miles </label> <br/>
+        <label><input type="checkbox" id="chk1" name="chk1"> 10 - 20 miles </label> <br/>
+        <label><input type="checkbox" id="chk1" name="chk1"> 20 - 30 miles </label> <br/>
+        <label><input type="checkbox" id="chk2" name="chk2"> Over 50 </label> <br/>
     </div>
   </div>
   <div class="col-md-8"> 
   <!-------------------- Results Items ----------------------->
-  	{% if pokemon %}
-    {% for i in pokemon %}
+  	{% if results %}
+    {% for i in results %}
       <div class="panel-group" id="accordion">
       <div class="panel panel-default results">
         <div class="panel-heading col-md-12">

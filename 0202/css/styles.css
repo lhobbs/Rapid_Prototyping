@@ -29,12 +29,32 @@ body {
 
 .page2 {
 	margin-bottom:50px;
-	margin-top:20px;
+	margin-top:60px;
 	padding-top:20px;
 	/*  background-color:#21293c; */
 	background-color:rgba(0,0,0,.5);
 }
 
+.project .panel-body{
+	background-color:#21293c;
+	color:#e8a45a;
+}
+
+.project li{
+	color:#fff;
+}
+
+.panel-primary .panel-heading{
+	color: #ffffff;
+  	background-color: #21293c;
+	border-color: #21293c;
+}
+.panel-primary {
+	border-color: #21293c;
+}
+.panel-default .panel-heading {
+	border-color: #21293c;
+}
 img {
     -webkit-box-shadow: 3px 3px 3px #7C7C7C;
     box-shadow: 3px 3px 3px #7C7C7C;
